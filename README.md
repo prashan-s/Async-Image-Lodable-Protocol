@@ -1,18 +1,30 @@
-AsyncImageLoadable Protocol
+# Async Image Loadable Protocol  
+  
 
-The AsyncImageLoadable protocol is a Swift protocol that provides the ability to load images asynchronously into a collection of UIImageViews, with customizable animation and timing options. The protocol also includes a completion handler that can be used to track the progress of the image loading.
-Features
+*The AsyncImageLoadable protocol is a Swift protocol that provides the ability to load images asynchronously into a collection of UIImageViews, with customizable animation and timing options. The protocol also includes a completion handler that can be used to track the progress of the image loading.*  
+  
 
-    Asynchronously loads images into a collection of UIImageViews for improved performance
-    Supports customizable animation options, including duration, delay, and animation type
-    Provides a completion handler to track the progress of the image loading
-    Easy to integrate into any Swift application
 
-Usage
 
-To use the AsyncImageLoadable protocol in your Swift application, you will need to implement the protocol and provide your own implementation for the loadImage() method. Here is an example implementation:
+### Features  
+- ❓Asynchronously loads images into a collection of UIImageViews for improved performance
+  
+  
 
-swift
+- ⚡ Supports customizable animation options, including duration, delay, and animation type  
+  
+
+- 💫 Provides a completion handler to track the progress of the image loading  
+  
+
+- Easy to integrate into any Swift application  
+  
+
+
+
+### Usage  
+To use the AsyncImageLoadable protocol in your Swift application, you will need to implement the protocol and provide your own implementation for the loadImage() method. Here is an example implementation:  
+  
 
 typealias AsyncImageCompletion = (_ id:Int,_ url:URL?,_ finished:Bool) -> Void
 
@@ -35,13 +47,13 @@ extension AsyncImageLoadable {
                    completion: @escaping AsyncImageCompletion) {
         // Your implementation here
     }
-}
+}  
+  
 
-In this implementation, the loadImage() method takes an array of URL objects representing the images to be loaded, as well as several optional parameters for customizing the animation behavior. The method also includes a completion handler that will be called after each image is loaded, providing the image's ID, URL, and a flag indicating whether all images have been loaded.
+#### In this implementation, the loadImage() method takes an array of URL objects representing the images to be loaded, as well as several optional parameters for customizing the animation behavior. The method also includes a completion handler that will be called after each image is loaded, providing the image's ID, URL, and a flag indicating whether all images have been loaded.
 
-Once you have implemented the AsyncImageLoadable protocol in your application, you can use it to asynchronously load images into a collection of UIImageViews. For example:
-
-swift
+Once you have implemented the AsyncImageLoadable protocol in your application, you can use it to asynchronously load images into a collection of UIImageViews. For example:  
+  
 
 class MyViewController: UIViewController, AsyncImageLoadable {
     var loadableImageViews: [UIImageView] = []
@@ -56,11 +68,21 @@ class MyViewController: UIViewController, AsyncImageLoadable {
             // Do something with the loaded image
         }
     }
-}
+}  
+  
 
-Installation
 
-To install the AsyncImageLoadable protocol in your Swift application, simply copy the code from the example implementation into your own codebase.
-License
 
-This protocol is licensed under the MIT License. See the LICENSE file for more information.
+### Installation  
+To install the AsyncImageLoadable protocol in your Swift application, simply copy the code from the example implementation into your own codebase.  
+  
+
+
+
+### License  
+This protocol is licensed under the MIT License. See the LICENSE file for more information.  
+
+<br />
+
+----
+<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
