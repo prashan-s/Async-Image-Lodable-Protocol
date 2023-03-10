@@ -83,6 +83,3 @@ To install the AsyncImageLoadable protocol in your Swift application, simply cop
 This protocol is licensed under the MIT License. See the LICENSE file for more information.  
 
 <br />
-
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
